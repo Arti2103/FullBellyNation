@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background-color:#eddcd9;
+    }
+    #first{
+      font-size: 40px;
+    }
+    /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #e99f4c;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #0e0d0d;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #050505;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: rgb(12, 59, 147);}
+.pic dd{
+  font-size: 90px;
+  text-align: center;
+
+}
+.pics git{
+  font-size: 90px;
+  text-align: center;
+}
+    
+
+  </style>
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Hunger Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="/path/to/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/182c2a95fd.js" crossorigin="anonymous"></script>
+    
+    
+    
+    <link rel="stylesheet" href="link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      
+      <img src="logo.png" style="width:400px;height: 100px;">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index .html">Home </a>
+        <div class="icon">
+          <i class='fas fa-home' style='font-size:24px'></i>
+        </div>
+      
+        
+      </li>
+      
+      <li><a href="about.html">About</a>
+        <div class="icon">
+          <i class='fas fa-user-friends' style='font-size:24px'></i>
+        </div></li>
+      
+      <li><a href="getinvolved.html">Get Involved</a>
+        <div class="icon">
+          <i class='fas fa-users' style='font-size:24px'></i>
+        </div>
+
+      </li>
+      <li><a href="login.html">login</a>
+        <div class="icon">
+          <i class='fas fa-user-circle' style='font-size:24px'></i>
+        </div></li>
+      <li class="dropdown">
+        <a href="">What we do
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+        </a>
+        <div class="dropdown-content">
+          <a href="work.html">How we work</a>
+          <a href="nourish.html">Nourishing lives</a>
+          
+        </div>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>“Freedom is meaningless if you cannot put food in their stomachs.” – Nelson Mandela</q>
+    <p class="author">– Nelson Mandela</p>
+  </div>
+
+  <div class="mySlides">
+    <q>“There are people in the world so hungry, that God cannot appear to them except in the form of bread.” –Mahatma Gandhi</q>
+    <p class="author">–Mahatma Gandhi</p>
+  </div>
+
+  <div class="mySlides">
+    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+    <p class="author">–Mother Teresa</p>
+  </div>
+  
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>
+<hr>
+<br>
+  <div class="pic">
+  
+
+    <p class="dd"> <strong>
+      Thank you for your interest in getting involved with Full Belly Nation! Here are a few ways that you can join our efforts to end hunger: </strong></p>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <section>
+    <div>
+        <p> DONATE <i style='font-size:36px' class='fas'>&#xf4be;</i>
+        <br><br> Your financial support can help us fund programs and initiatives that address the root causes of hunger and provide food assistance to those in need. Every donation, big or small, makes a difference in the fight against hunger. <br> <br><br>
+        </p>
+    </div>
+  </section>
+
+  <div>
+    <p>
+        VOLUNTEER:<i style="font-size:24px" class="fa">&#xf028;</i> <br><br> We are always looking for passionate and dedicated volunteers to help us with our advocacy work, fundraising events, and community outreach efforts. If you are interested in volunteering, please contact us for more information. <br> <br> <br>
+    </p>
+  </div>
+  <div>
+    <p>
+        EDUCATIONAL RESOURCES: <i class='fas fa-book-reader' style='font-size:36px'></i><br> <br> Provide resources and information on the causes and effects of hunger, as well as strategies for addressing this global issue. This can include articles, infographics, videos, and other educational materials. <br> <br> <br>
+    </p>
+  </div>
+  <div>
+    <p>
+        PARTERNSHIP WITH US: <i style="font-size:24px" class="fa">&#xf0c0;</i><br> <br> We are always looking for like-minded organizations and individuals to partner with us in our efforts to end hunger. If you have an idea for a collaboration or would like to discuss partnership opportunities, please contact us. <br> <br> <br>
+    </p>
+  </div>
+  <div>
+    <p>
+        SPREAD THE WORLD: <i style="font-size:24px" class="fa">&#xf028;</i><br> <br> The more people know about the issue of hunger, the more we can do to address it. Please share our website and social media pages with your friends and family, and encourage them to get involved as well. <br> <br> <br>
+
+    </p>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="pics">
+    <p class="git">
+       <strong> No matter how you choose to get involved, your support is crucial in our fight to end hunger. Together, we can make a difference and create a world where everyone has access to nutritious food.</strong>
+    </p>
+  </div>
+ 
+
+
+
+
+     <!--footer class-->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h1>NO POVERTY!</h1>
+                <p>Your kindness make Nation Better</p>
+                <div class="app-logo">
+                    <img src="play-store.png" alt="">
+                    <img src="app-store.png" alt="">
+                </div>
+            </div>
+            <!---footer-->
+            <div class="footer-col-2">
+                <img src="logo.png" >
+                <p>Our purpose is to Feed the "NATION".</p>
+            </div>
+            
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                  <a href="https://www.facebook.com/profile.php?id=100091297423216&mibextid=ZbWKwL"><li>Facebook<i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </li></a>
+                  <a href="https://twitter.com/nation_full?t=i-C24smAxai7cJNKp0C9kw&s=08"><li>Twitter <i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                  <a href="https://instagram.com/fullbellynation?igshid=ZDdkNTZiNTM="><li>Instagram <i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                  <a href="youtube.com"><li>Youtube <i class="fa fa-youtube-play" aria-hidden="true"></i></li></a>
+                </ul>
+            </div>
+  
+        </div>
+  
+    </div>
+  </div>
+
+</body>
+</html>
+<script>
+    const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  burger.addEventListener('click', () => {
+    // Toggle Nav
+    nav.classList.toggle('nav-active');
+
+    // Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+      }
+    });
+
+    // Burger Animation
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+</script>

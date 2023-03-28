@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background-color:#eddcd9;
+    }
+  </style>
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Hunger Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="/path/to/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/182c2a95fd.js" crossorigin="anonymous"></script>
+    
+    
+    
+    <link rel="stylesheet" href="link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      
+      <img src="logo.png" style="width:400px;height: 100px;">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index .html">Home </a>
+        <div class="icon">
+          <i class='fas fa-home' style='font-size:24px'></i>
+        </div>
+      
+        
+      </li>
+      
+      <li><a href="about.html">About</a>
+        <div class="icon">
+          <i class='fas fa-user-friends' style='font-size:24px'></i>
+        </div></li>
+      
+      <li><a href="getinvolved.html">Get Involved</a>
+        <div class="icon">
+          <i class='fas fa-users' style='font-size:24px'></i>
+        </div>
+
+      </li>
+      <li><a href="login.html">login</a>
+        <div class="icon">
+          <i class='fas fa-user-circle' style='font-size:24px'></i>
+        </div></li>
+      <li class="dropdown">
+        <a href="">What we do
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+        </a>
+        <div class="dropdown-content">
+          <a href="work.html">How we work</a>
+          <a href="nourish.html">Nourishing lives</a>
+          
+        </div>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <div style="text-align: left;" class="row">
+    <img class="class-a" src="fourth.jpg" style="width: 600px; height: 400px;" >
+    <div class="col-2">
+      <h1> "How we work?" </h1>
+      <p>Educate Yourself: Learn about the causes and consequences of hunger, as well as the various initiatives and organizations working towards eradicating it.
+
+        <p>Donate: Support organizations that provide food and aid to those who are hungry. Consider donating to food banks, soup kitchens, or international organizations like the World Food Programme.</p>
+        
+       <p> Volunteer: Help out at local food banks or soup kitchens. You can also volunteer with organizations that focus on hunger relief.
+        
+        <p>Advocate: Speak out about the issue of hunger and advocate for policies that address its root causes. Support political candidates who prioritize ending hunger, and write to your elected officials about the importance of funding hunger relief programs.
+        
+        <p>Reduce Food Waste: Food waste is a major contributor to hunger. Reduce your own food waste by planning meals, buying only what you need, and using leftovers creatively.
+        
+       <p> Support Local Farmers: Support small-scale farmers by buying locally grown produce. This can help create sustainable food systems and reduce food insecurity in your community.
+        
+        <p>Remember, ending hunger requires collective action. By working together, we can create a world where everyone has access to nutritious food.
+
+        </p>
+
+
+    </div>
+
+
+
+  <!--footer class-->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h1>NO POVERTY!</h1>
+                <p>Your kindness make Nation Better</p>
+                <div class="app-logo">
+                    <img src="play-store.png" alt="">
+                    <img src="app-store.png" alt="">
+                </div>
+            </div>
+            <!---footer-->
+            <div class="footer-col-2">
+                <img src="logo.png" >
+                <p>Our purpose is to Feed the "NATION".</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blogpost</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                  <a href="https://www.facebook.com/profile.php?id=100091297423216&mibextid=ZbWKwL"><li>Facebook<i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </li></a>
+                  <a href="https://twitter.com/nation_full?t=i-C24smAxai7cJNKp0C9kw&s=08"><li>Twitter <i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                  <a href="https://instagram.com/fullbellynation?igshid=ZDdkNTZiNTM="><li>Instagram <i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                  <a href="youtube.com"><li>Youtube <i class="fa fa-youtube-play" aria-hidden="true"></i></li></a>
+                </ul>
+            </div>
+  
+        </div>
+  
+    </div>
+  </div>
+</body>
+</html>
+<script>
+    const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  burger.addEventListener('click', () => {
+    // Toggle Nav
+    nav.classList.toggle('nav-active');
+
+    // Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+      }
+    });
+
+    // Burger Animation
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
+
+</script>

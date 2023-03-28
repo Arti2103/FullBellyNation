@@ -1,0 +1,330 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #de5499;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+    
+  }
+  
+  .logo {
+    color: #264143;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    page-break-after: always;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #264143;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #eddcd9;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #eddcd9;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: fixed;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #de5499;
+      display: flex;
+      flex-direction:row;
+    }
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 900px;
+    height: 600px;
+    margin-left: 220px;
+    margin-right: 20px;
+    
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    margin-bottom: 60px;/* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #e99f4c;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-box-back h2{
+    display: block;
+    font-size: 3.3em;
+    margin-top: 1em;
+    margin-bottom: 9em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  .flip-box-back p{
+    display: block;
+    margin-top: 6em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+  } 
+  body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .circle-image {
+    border-radius: 50%; /* sets the shape of the image to a circle */
+    width: 150px; /* sets the width of the image */
+    height: 150px; /* sets the height of the image */
+    object-fit: cover; /* resizes the image to fit inside the circle without distorting it */
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    }
+    .col-2{
+        flex-basis: 50%;
+        min-width: 300px;
+        margin-top: 60px;
+    }
+    .col-2 h1{
+      color: #264143;
+    }
+    
+
+    .col-2 img{
+        max-width: 100%;
+        padding: 50px 0;
+        margin-top: 60px;
+        }
+  .round-rect{
+    border-radius: 25px;
+    overflow: hidden;
+
+ }   
+ body{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+.class-a{
+opacity: 1;
+}
+/*footer*/
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 2px 0 2px;
+  margin-top: 60px;
+  padding-left: 3em;
+  padding-right: 3em;
+  width: 100%;
+}
+.footer p{
+  color: #8a8a8a;
+
+}
+.footer h3{
+  color: #de5499;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-1 h1{
+  color: #de5499;
+  font-size: 20px;
+
+}
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+ text-align: center;
+}
+.footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+.app-logo img{
+  width: 140px;
+
+
+}
+.menu-icon{
+  width: 100px;
+  margin-left: 100px;
+  display: none;
+}
+#scrolling-text {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#scrolling-text h1 {
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  position:relative;
+}
+
+.icon i {
+  font-size: 20px;
+  color: #121111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon i:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.normal-underline{
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+}
